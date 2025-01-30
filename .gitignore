@@ -1,0 +1,9 @@
+# vs dumb files
+*.vcxproj.filters
+*.vcxproj.user
+.vs/
+
+# out 
+viering-.37046ea2/
+x64/
+
