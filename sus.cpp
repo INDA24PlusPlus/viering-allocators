@@ -1,7 +1,6 @@
 #include "sus.h"
 
 #include <Windows.h>
-#include <iostream>
 
 SusAllocator::SusAllocator() : ptr(nullptr) { }
 
@@ -10,7 +9,6 @@ SusAllocator::~SusAllocator() {
 		SusBlock* next = ptr->next;
 		VirtualFree(this->ptr, 0, MEM_RELEASE);
 		this->ptr = next;
-		std::cout << "cleaning\n";
 	}
 }
 
